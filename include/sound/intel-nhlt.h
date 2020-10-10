@@ -93,6 +93,7 @@ struct nhlt_resource_desc  {
 	u64 length;
 } __packed;
 
+#define MIC_ARRAY_1CH 1
 #define MIC_ARRAY_2CH 2
 #define MIC_ARRAY_4CH 4
 
@@ -113,6 +114,7 @@ struct nhlt_vendor_dmic_array_config {
 } __packed;
 
 enum {
+	NHLT_MIC_ARRAY_1CH = 0x1,
 	NHLT_MIC_ARRAY_2CH_SMALL = 0xa,
 	NHLT_MIC_ARRAY_2CH_BIG = 0xb,
 	NHLT_MIC_ARRAY_4CH_1ST_GEOM = 0xc,
